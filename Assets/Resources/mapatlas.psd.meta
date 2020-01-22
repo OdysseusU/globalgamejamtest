@@ -5,6 +5,7 @@ TextureImporter:
     21300000: mapatlas_0
     21300002: mapatlas_1
     21300004: mapatlas_2
+    21300006: mapatlas_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -123,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c5d3713de174b749325fdf0222ee88
+      spriteID: eb7d0b32b6b3c8942b88b386d5f527eb
       vertices: []
       indices: 
       edges: []
@@ -143,7 +144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccaf45362c4f84d1cb626f59fd8cf917
+      spriteID: bcfc4089bec97824db50a15adde126c5
       vertices: []
       indices: 
       edges: []
@@ -163,7 +164,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99ba6c2f4ecb34499bc197b5bee35b59
+      spriteID: b65dee1937bfc1645b375878ca55bb10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapatlas_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8bb463f61132141b281f287b1e6f8f
       vertices: []
       indices: 
       edges: []
