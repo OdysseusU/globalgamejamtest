@@ -10,7 +10,7 @@ public class TrapScript : MonoBehaviour
 
     public float damage = 1f;
 
-    private Collider2D collider;
+    private Collider2D collider2d;
     private SpriteRenderer spriteRenderer;
 
     private float timeLeft = 0f;
@@ -18,7 +18,7 @@ public class TrapScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        collider = GetComponent<Collider2D>();
+        collider2d = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -27,7 +27,7 @@ public class TrapScript : MonoBehaviour
     {
         if((Time.realtimeSinceStartup+offset)%period < 0.1f)
         {
-            collider.enabled = true;
+            collider2d.enabled = true;
             spriteRenderer.enabled = true;
             timeLeft = 0f;
             alive = true;
@@ -38,7 +38,7 @@ public class TrapScript : MonoBehaviour
             timeLeft += Time.deltaTime;
             if(timeLeft > timeAlive)
             {
-                collider.enabled = false;
+                collider2d.enabled = false;
                 spriteRenderer.enabled = false;
                 alive = false;
             }
