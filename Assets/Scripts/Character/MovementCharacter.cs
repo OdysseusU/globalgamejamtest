@@ -56,7 +56,7 @@ public class MovementCharacter : MonoBehaviour
     private void ShootProj()
     {
         mMousePosition = Camera.ScreenToWorldPoint(Input.mousePosition);
-
+        
         //GameObject lProjectile = Instantiate(ProjectileType, StartProjectile.position, StartProjectile.rotation);
         //Rigidbody2D lRigidBody = lProjectile.GetComponent<Rigidbody2D>();
         //lRigidBody.AddForce((mMousePosition - StartProjectile.position) * mBulletForce, ForceMode2D.Impulse);
