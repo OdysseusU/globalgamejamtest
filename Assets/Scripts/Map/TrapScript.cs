@@ -20,11 +20,23 @@ public class TrapScript : MonoBehaviour
     {
         collider2d = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if(period == 0)
+        {
+            collider2d.enabled = true;
+            spriteRenderer.enabled = true;
+            timeLeft = 0f;
+            alive = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(period == 0)
+        {
+            return;
+        }
         if((Time.realtimeSinceStartup+offset)%period < 0.1f)
         {
             collider2d.enabled = true;
