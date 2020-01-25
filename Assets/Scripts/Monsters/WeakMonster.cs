@@ -48,6 +48,10 @@ public class WeakMonster : AMonster
     public override void LoseHp(float iDamage)
     {
         mLife -= iDamage;
+        if(mLife <= 0)
+            Destroy(gameObject);
+
+
     }
 
 }
