@@ -57,6 +57,7 @@ public class CharacterAction : MonoBehaviour
     private void ShootProj()
     {
         mMousePosition = Camera.ScreenToWorldPoint(Input.mousePosition);
+        GetComponentInChildren<Weapon>().shoot();
         
         //GameObject lProjectile = Instantiate(ProjectileType, StartProjectile.position, StartProjectile.rotation);
         //Rigidbody2D lRigidBody = lProjectile.GetComponent<Rigidbody2D>();

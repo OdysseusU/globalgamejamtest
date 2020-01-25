@@ -32,8 +32,14 @@ public class Projectile : MonoBehaviour
 
     protected virtual void triggerCollider(Collider2D collision)
     {
-        GameObject.Destroy(this.gameObject);
         //remove other life
+        //    GameManager.instance.Character.GetComponent<CharacterAction>().LifeDamaged(damage);
+        if (collision.GetComponent<AMonster>() != null)
+        {
+            collision.GetComponent<AMonster>().LoseHp(damage);
+        }
+        if (collision.gameObject.GetComponent<CharacterAction>() == null)
+            GameObject.Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

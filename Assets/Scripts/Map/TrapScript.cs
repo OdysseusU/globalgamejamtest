@@ -59,6 +59,10 @@ public class TrapScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.GetComponent<CharacterAction>() != null)
+            GameManager.instance.Character.GetComponent<CharacterAction>().LifeDamaged(damage);
+        if (collision.gameObject.GetComponent<AMonster>() != null)
+            collision.gameObject.GetComponent<AMonster>().LoseHp(damage);
+
     }
 }

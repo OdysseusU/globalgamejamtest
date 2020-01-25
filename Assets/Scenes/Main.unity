@@ -119,6 +119,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7819181311390027037, guid: e99318d78032ac04a96f479e36139228,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819181311390027037, guid: e99318d78032ac04a96f479e36139228,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819181311390027037, guid: e99318d78032ac04a96f479e36139228,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819181311390027037, guid: e99318d78032ac04a96f479e36139228,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819181311390027037, guid: e99318d78032ac04a96f479e36139228,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 8308128156064453048, guid: e99318d78032ac04a96f479e36139228,
         type: 3}
       propertyPath: Camera
