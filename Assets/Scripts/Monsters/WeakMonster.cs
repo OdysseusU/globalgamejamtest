@@ -31,7 +31,8 @@ public class WeakMonster : AMonster
         mVectorMonster = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
 
         this.transform.position = Vector3.MoveTowards(mVectorMonster, mVectorCharacter, mStep);
-        if(Vector3.Distance(mVectorMonster,mVectorCharacter )< 0.001F)
+        //if(Vector3.Distance(mVectorMonster,mVectorCharacter )< 0.001F)
+        if(this.gameObject.GetComponent<Collider2D>().IsTouching(GameManager.instance.Character.GetComponent<Collider2D>()))
         {
             Debug.Log("WEAKMONSTER : Destroy this");
             GameManager.instance.Character.GetComponent<CharacterAction>().LifeDamaged(5F);
