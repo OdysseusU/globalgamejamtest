@@ -33,8 +33,10 @@ public class WeakMonster : AMonster
         this.transform.position = Vector3.MoveTowards(mVectorMonster, mVectorCharacter, mStep);
         if(Vector3.Distance(mVectorMonster,mVectorCharacter )< 0.001F)
         {
+            Debug.Log("WEAKMONSTER : Destroy this");
+            GameManager.instance.Character.GetComponent<CharacterAction>().LifeDamaged(5F);
             //Deals des dommage au perso puis se détruit (animation)
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 

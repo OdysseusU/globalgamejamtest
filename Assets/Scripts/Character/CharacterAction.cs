@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class MovementCharacter : MonoBehaviour
+public class CharacterAction : MonoBehaviour
 {
 
     [SerializeField]
@@ -24,6 +24,7 @@ public class MovementCharacter : MonoBehaviour
     public event Action<float> OnLifeDamaged;
 
     private bool mInvulnerable;
+
 
     private void Start()
     {
@@ -63,7 +64,7 @@ public class MovementCharacter : MonoBehaviour
 
     }
 
-    private void LifeDamaged(float iDamage)
+    public void LifeDamaged(float iDamage)
     {
 
         if(mLifeCharacter - iDamage > 0 && !mInvulnerable)
@@ -79,7 +80,7 @@ public class MovementCharacter : MonoBehaviour
         {
             //Animation mort du perso ou relancer le level
         }
-
+        Debug.Log("CHARACTER LIFE : " + mLifeCharacter);
     }
 
     private IEnumerator ResetInvulnerability()
