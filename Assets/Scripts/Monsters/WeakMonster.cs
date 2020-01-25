@@ -45,4 +45,9 @@ public class WeakMonster : AMonster
 
     }
 
+    public override void LoseHp(float iDamage)
+    {
+        mLife -= iDamage;
+    }
+
 }

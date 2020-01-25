@@ -6,4 +6,5 @@ public abstract class AMonster : MonoBehaviour
 {
     public abstract void Shoot();
     public abstract void Move();
+    public abstract void LoseHp(float iDmg);
 }
